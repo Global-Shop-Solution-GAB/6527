@@ -1,0 +1,443 @@
+﻿Program.Sub.ScreenSU.Start
+gui.F_Positive_Pay_WllsFrgo..create
+gui.F_Positive_Pay_WllsFrgo..caption("Positive Pay File")
+gui.F_Positive_Pay_WllsFrgo..size(3420,2475)
+gui.F_Positive_Pay_WllsFrgo..position(0,0)
+gui.F_Positive_Pay_WllsFrgo..event(unload,f_positive_pay_wllsfrgo_unload)
+gui.F_Positive_Pay_WllsFrgo..alwaysontop(False)
+gui.F_Positive_Pay_WllsFrgo..fontname("Arial")
+gui.F_Positive_Pay_WllsFrgo..fontsize(8)
+gui.F_Positive_Pay_WllsFrgo..forecolor(0)
+gui.F_Positive_Pay_WllsFrgo..fontstyle(,,,,)
+gui.F_Positive_Pay_WllsFrgo..BackColor(-2147483633)
+gui.F_Positive_Pay_WllsFrgo..controlbox(True)
+gui.F_Positive_Pay_WllsFrgo..maxbutton(True)
+gui.F_Positive_Pay_WllsFrgo..minbutton(True)
+gui.F_Positive_Pay_WllsFrgo..mousepointer(0)
+gui.F_Positive_Pay_WllsFrgo..moveable(True)
+gui.F_Positive_Pay_WllsFrgo..sizeable(False)
+gui.F_Positive_Pay_WllsFrgo..ShowInTaskBar(True)
+gui.F_Positive_Pay_WllsFrgo..titlebar(True)
+gui.F_Positive_Pay_WllsFrgo.frOpt.create(frame)
+gui.F_Positive_Pay_WllsFrgo.frOpt.caption("")
+gui.F_Positive_Pay_WllsFrgo.frOpt.size(2745,585)
+gui.F_Positive_Pay_WllsFrgo.frOpt.position(200,700)
+gui.F_Positive_Pay_WllsFrgo.frOpt.visible(True)
+gui.F_Positive_Pay_WllsFrgo.frOpt.borderstyle(0)
+gui.F_Positive_Pay_WllsFrgo.frOpt.fontname("Arial")
+gui.F_Positive_Pay_WllsFrgo.frOpt.fontsize(8)
+gui.F_Positive_Pay_WllsFrgo.cmdOK.create(button)
+gui.F_Positive_Pay_WllsFrgo.cmdOK.caption("Ok")
+gui.F_Positive_Pay_WllsFrgo.cmdOK.visible(True)
+gui.F_Positive_Pay_WllsFrgo.cmdOK.size(900,375)
+gui.F_Positive_Pay_WllsFrgo.cmdOK.zorder(0)
+gui.F_Positive_Pay_WllsFrgo.cmdOK.position(200,1400)
+gui.F_Positive_Pay_WllsFrgo.cmdOK.enabled(True)
+gui.F_Positive_Pay_WllsFrgo.cmdOK.fontname("Arial")
+gui.F_Positive_Pay_WllsFrgo.cmdOK.fontsize(8)
+gui.F_Positive_Pay_WllsFrgo.cmdOK.event(click,cmdok_click)
+gui.F_Positive_Pay_WllsFrgo.dtpBegin.create(datepicker)
+gui.F_Positive_Pay_WllsFrgo.dtpBegin.visible(True)
+gui.F_Positive_Pay_WllsFrgo.dtpBegin.size(1350,285)
+gui.F_Positive_Pay_WllsFrgo.dtpBegin.zorder(0)
+gui.F_Positive_Pay_WllsFrgo.dtpBegin.position(200,400)
+gui.F_Positive_Pay_WllsFrgo.dtpBegin.enabled(True)
+gui.F_Positive_Pay_WllsFrgo.dtpBegin.checkbox(False)
+gui.F_Positive_Pay_WllsFrgo.dtpEnd.create(datepicker)
+gui.F_Positive_Pay_WllsFrgo.dtpEnd.visible(True)
+gui.F_Positive_Pay_WllsFrgo.dtpEnd.size(1350,285)
+gui.F_Positive_Pay_WllsFrgo.dtpEnd.zorder(0)
+gui.F_Positive_Pay_WllsFrgo.dtpEnd.position(1600,400)
+gui.F_Positive_Pay_WllsFrgo.dtpEnd.enabled(True)
+gui.F_Positive_Pay_WllsFrgo.dtpEnd.checkbox(False)
+gui.F_Positive_Pay_WllsFrgo.optChecks.create(option)
+gui.F_Positive_Pay_WllsFrgo.optChecks.caption("Checks")
+gui.F_Positive_Pay_WllsFrgo.optChecks.visible(True)
+gui.F_Positive_Pay_WllsFrgo.optChecks.size(855,255)
+gui.F_Positive_Pay_WllsFrgo.optChecks.zorder(0)
+gui.F_Positive_Pay_WllsFrgo.optChecks.position(100,200)
+gui.F_Positive_Pay_WllsFrgo.optChecks.enabled(True)
+gui.F_Positive_Pay_WllsFrgo.optChecks.alignment(0)
+gui.F_Positive_Pay_WllsFrgo.optChecks.parent("fropt")
+gui.F_Positive_Pay_WllsFrgo.optChecks.fontname("Arial")
+gui.F_Positive_Pay_WllsFrgo.optChecks.fontsize(8)
+gui.F_Positive_Pay_WllsFrgo.optVoids.create(option)
+gui.F_Positive_Pay_WllsFrgo.optVoids.caption("Voids")
+gui.F_Positive_Pay_WllsFrgo.optVoids.visible(True)
+gui.F_Positive_Pay_WllsFrgo.optVoids.size(1000,255)
+gui.F_Positive_Pay_WllsFrgo.optVoids.zorder(0)
+gui.F_Positive_Pay_WllsFrgo.optVoids.position(1200,200)
+gui.F_Positive_Pay_WllsFrgo.optVoids.enabled(True)
+gui.F_Positive_Pay_WllsFrgo.optVoids.alignment(0)
+gui.F_Positive_Pay_WllsFrgo.optVoids.parent("fropt")
+gui.F_Positive_Pay_WllsFrgo.optVoids.fontname("Arial")
+gui.F_Positive_Pay_WllsFrgo.optVoids.fontsize(8)
+gui.F_Positive_Pay_WllsFrgo.lblBeginDate.create(label,"Beginning Date",True,1935,255,1,200,200,True,0,Arial,8,-2147483633,0)
+gui.F_Positive_Pay_WllsFrgo.lblEndDate.create(label,"Ending Date",True,1935,255,1,1600,200,True,0,Arial,8,-2147483633,0)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'Modified by: Brandon Medina 
+'Start: 10/27/2021
+'Quote: 13188
+'Customer: Warrior Rig Technologies 
+'Desc: This project modifies project 3772 to pull bank account number from default cash account in 
+
+'Coded by: Melinda Keyes
+'Project Start Date: 7/8/2011
+'Hooks:
+'  Custom Menu Item - Accounts Payable > Transactions > Wells Fargo Positive Pay
+'Quote: 2636
+'Notes:
+'  'This script creates a positive pay file in the format specified by Wells Fargo Bank
+
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'F.ODBC.Connection!conX.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+F.ODBC.Connection!conX.OpenCompanyConnection
+Gui.F_Positive_Pay_WllsFrgo..Visible(true)
+Gui.F_Positive_Pay_WllsFrgo..Show
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: ATG_3772_Pos_PayWllsfrgo.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_positive_pay_wllsfrgo_unload)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.Main.End
+
+program.sub.cmdok_click.start
+'Create a positive pay file for export to Wells Fargo
+F.Intrinsic.Control.SetErrorHandler("cmdok_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sReturn.Declare(String)
+V.Local.sFileName.Declare(String)
+V.Local.sMonth.Declare(String)
+V.Local.sDay.Declare(String)
+V.Local.sAcct.Declare(String)
+V.Local.iHdl.Declare(Long)
+V.Local.byteArray.Declare(ByteArray)
+
+Gui.F_Positive_Pay_WllsFrgo..Enabled(false)
+
+F.Intrinsic.Control.If(V.Screen.F_Positive_Pay_WllsFrgo!optChecks.Value,<>,True)
+F.Intrinsic.Control.AndIf(V.Screen.F_Positive_Pay_WllsFrgo!optVoids.Value,<>,True)
+	F.Intrinsic.UI.Msgbox("Please select a checks or voids.","Print Type Required")
+	Gui.F_Positive_Pay_WllsFrgo..Enabled(true)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Date.Day(V.Ambient.Date,V.Local.sDay)
+F.Intrinsic.String.LPad(V.Local.sDay,"0",2,V.Local.sDay)
+F.Intrinsic.Date.Month(V.Ambient.Date,V.Local.sMonth)
+F.Intrinsic.String.LPad(V.Local.sMonth,"0",2,V.Local.sMonth)
+F.Intrinsic.String.Concat(V.Local.sMonth,V.Local.sDay,"AP",V.Local.sFileName)
+
+F.Intrinsic.Control.If(V.Screen.F_Positive_Pay_WllsFrgo!optChecks.Value,=,True)
+	F.Intrinsic.String.Concat(V.Local.sFileName,"Chk",V.Local.sFileName)
+F.Intrinsic.Control.Else
+	F.Intrinsic.String.Concat(V.Local.sFileName,"Void",V.Local.sFileName)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.UI.ShowSaveFileDialog(V.Local.sFileName,"prn|*.prn",V.Local.sReturn)
+F.Intrinsic.Control.If(V.Local.sReturn,=,"***CANCEL***")
+	F.Intrinsic.Control.CallSub(F_positive_pay_wllsfrgo_unload)
+F.Intrinsic.Control.Else
+	F.Intrinsic.File.GetHandle(V.Local.iHdl)
+	V.Local.sFileName.Set(V.Local.sReturn)
+	F.Intrinsic.File.GetFileList(V.Local.sFileName,V.Local.sReturn)
+	F.Intrinsic.Control.If(V.Local.sReturn,=,"")
+		F.Intrinsic.File.OpenForWrite(V.Local.sFileName,V.Local.iHdl)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.File.DeleteFile(V.Local.sFileName)
+		F.Intrinsic.File.OpenForWrite(V.Local.sFileName,V.Local.iHdl)
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+
+
+'F.ODBC.Connection!conX.OpenRecordsetRO("rstAccts","SELECT DISTINCT ACCT_NO FROM V_CHECKS_LOG")
+'F.Intrinsic.Control.If(V.ODBC.conX!rstAccts.EOF,<>,True)
+'	V.Local.sAcct.Set(V.ODBC.conX!rstAccts.FieldValTrim!ACCT_NO)
+'F.Intrinsic.Control.EndIf
+'F.ODBC.conX!rstAccts.Close
+
+'BM bank account number no longer held here. Need to decrypt bank acct from CASH_ACCOUNT 
+	'This value is not used anywhere for anything though? Will pass this along to detail_record subroutine
+	
+F.Data.DataTable.CreateFromSQL("dtAcct", "conx", "Select BANK_ACCOUNT_ENC from CASH_ACCOUNT where DEFAULT_ACCT = '1'")
+F.Intrinsic.Control.If(V.DataTable.dtAcct.RowCount, >, 0)
+	F.Global.Encryption.Decrypt(V.DataTable.dtAcct(0).BANK_ACCOUNT_ENC!FieldVal, V.Local.sAcct)
+F.Intrinsic.Control.EndIf
+F.Data.DataTable.Close("dtAcct")
+
+F.Intrinsic.Control.CallSub(File_header,"iHdl",V.Local.iHdl)
+'BM Mod to now pass account number to detail record subroutine
+F.Intrinsic.Control.CallSub(Detail_record,"iHdl",V.Local.iHdl, "sAcct", V.Local.sAcct)
+F.Intrinsic.Control.CallSub(Trailer_record,"iHdl",V.Local.iHdl,"iRecCount",V.Args.iRecCount,"fAmountTotal",V.Args.fAmountTotal)
+
+F.Intrinsic.File.CloseFile(V.Local.iHdl)
+F.Intrinsic.Control.CallSub(F_positive_pay_wllsfrgo_unload)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdok_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Gui.F_Positive_Pay_WllsFrgo..Enabled(true)
+	Function.Intrinsic.String.Concat("Project: ATG_3772_Pos_PayWllsfrgo.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_positive_pay_wllsfrgo_unload)
+Function.Intrinsic.Control.EndIf
+
+program.sub.cmdok_click.End
+
+program.sub.f_positive_pay_wllsfrgo_unload.start
+'Close the database connection and exit the program
+
+F.Intrinsic.Control.SetErrorHandler("f_positive_pay_wllsfrgo_unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.ODBC.Connection!conX.Close
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("f_positive_pay_wllsfrgo_unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: ATG_3772_Pos_PayWllsfrgo.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+program.sub.f_positive_pay_wllsfrgo_unload.End
+
+Program.Sub.file_header.Start
+'Write the headers to the positive pay file
+F.Intrinsic.Control.SetErrorHandler("file_header_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sFile.Declare(String)
+
+'transmission header: $ADD ID=(RID) BID='(BID)'
+V.Local.sFile.Set("$$ADD ID=R39LPQF6 BID='FKI9600139789'")
+F.Intrinsic.File.WriteLine(V.Args.iHdl,V.Local.sFile)
+
+'file header: *03 Bank ID Acct Num File Status
+V.Local.sFile.Set("*03002590000096020008130")
+F.Intrinsic.File.WriteLine(V.Args.iHdl,V.Local.sFile)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("file_header_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Gui.F_Positive_Pay_WllsFrgo..Enabled(true)
+	Function.Intrinsic.String.Concat("Project: ATG_3772_Pos_PayWllsfrgo.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_positive_pay_wllsfrgo_unload)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.file_header.End
+
+Program.Sub.detail_record.Start
+'Write out a detail line to the file for each check/void to be printed
+F.Intrinsic.Control.SetErrorHandler("detail_record_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sChkSerial.Declare(String)
+V.Local.sIssueDate.Declare(String)
+V.Local.sAcctNum.Declare(String)
+V.Local.sTransCode.Declare(String)
+V.Local.sAmount.Declare(String)
+V.Local.sPayee.Declare(String)
+V.Local.sVendorNo.Declare(String)
+V.Local.iRecCount.Declare(Long)
+V.Local.iLen.Declare(Long)
+V.Local.fAmountTotal.Declare(Float)
+V.Local.fAmount.Declare(Float)
+V.Local.sQuery.Declare(String)
+V.Local.sBeginDate.Declare(String)
+V.Local.sEndDate.Declare(String)
+V.Local.sFileLine.Declare(String)
+V.Local.bDec.Declare(Boolean)
+V.Local.bExists.Declare(Boolean)
+V.Local.bMatch.Declare(Boolean)
+V.Local.sMsg.Declare(String)
+V.Local.iRow.Declare
+V.Local.bSkip.Declare
+
+F.Intrinsic.String.Format(V.Screen.F_Positive_Pay_WllsFrgo!dtpBegin.Value,"YYYY-MM-DD",V.Local.sBeginDate)
+F.Intrinsic.String.Format(V.Screen.F_Positive_Pay_WllsFrgo!dtpEnd.Value,"YYYY-MM-DD",V.Local.sEndDate)
+
+'Open for accounts payable
+V.Local.sQuery.Set("SELECT * FROM V_CHECKS_LOG WHERE CK_OR_VOID = ")
+
+F.Intrinsic.Control.If(V.Screen.F_Positive_Pay_WllsFrgo!optChecks.Value,=,True)
+'Print out checks
+	F.Intrinsic.String.Concat(V.Local.sQuery,"'C' AND CK_DATE BETWEEN '",V.Local.sBeginDate,"' AND '",V.Local.sEndDate,"' ORDER BY CK_DATE",V.Local.sQuery)
+	'transaction code - 320 check register
+	V.Local.sTransCode.Set("320")
+F.Intrinsic.Control.Else
+'Print out voids
+	F.Intrinsic.String.Concat(V.Local.sQuery,"'V' AND CK_DATE BETWEEN '",V.Local.sBeginDate,"' AND '",V.Local.sEndDate,"' ORDER BY CK_DATE",V.Local.sQuery)
+	'transaction code - 370 void register
+	V.Local.sTransCode.Set("430")
+F.Intrinsic.Control.EndIf
+
+V.Local.iRecCount.Set(0)
+V.Local.fAmountTotal.Set(0)
+
+'Open the accounts payable recordset
+'BM Do this as a for loop now, and iterate through the rows of an AP datatable instead. Using a do until loop won't let you continue to next iteration halfway
+'through without crashing the program... 
+'F.ODBC.Connection!conX.OpenRecordsetRO("rstAccts",V.Local.sQuery)
+F.Data.DataTable.CreateFromSQL("dtAcct", "conx", V.Local.sQuery)
+'F.Intrinsic.Control.DoUntil(V.ODBC.conX!rstAccts.EOF,=,True)
+F.Intrinsic.Control.If(V.DataTable.dtAcct.RowCount, =, 0)
+	F.Intrinsic.UI.Msgbox("No checks within the specified date range")
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.For(V.Local.iRow, 0, V.DataTable.dtAcct.RowCount--, 1)
+	'V.Local.sChkSerial.Set(V.ODBC.conX!rstAccts.FieldValTrim!CK_NO)
+	V.Local.sChkSerial.Set(V.DataTable.dtAcct(V.Local.iRow).CK_NO!FieldValTrim)
+	'BM Warrior Rig also does ACH payments. Check that check is not an ACH, if so then do not write to the file and move onto next record
+	F.Intrinsic.Control.If(V.Local.sChkSerial.Left1, =, "A")
+		V.Local.bSkip.Set(True)
+	F.Intrinsic.Control.Else
+		V.Local.bSkip.Set(False)
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.String.LPad(V.Local.sChkSerial,"0",10,V.Local.sChkSerial)
+	'V.Local.sIssueDate.Set(V.ODBC.conX!rstAccts.FieldValTrim!CK_MDYY)
+	V.Local.sIssueDate.Set(V.DataTable.dtAcct(V.Local.iRow).CK_MDYY!FieldValTrim)
+	F.Intrinsic.String.Format(V.Local.sIssueDate,"MMDDYY",V.Local.sIssueDate)
+	'BM replace w default bank acct num
+	'V.Local.sAcctNum.Set(V.ODBC.conX!rstAccts.FieldValTrim!ACCT_NO)
+	V.Local.sAcctNum.Set(V.Args.sAcct)
+	V.Local.sAcctNum.Set(V.Local.sAcctNum.Trim)
+
+	F.Intrinsic.String.LPad(V.Local.sAcctNum,"0",10,V.Local.sAcctNum)
+	'V.Local.sAmount.Set(V.ODBC.conX!rstAccts.FieldVal!AMOUNT)
+	V.Local.sAmount.Set(V.DataTable.dtAcct(V.Local.iRow).AMOUNT!FieldVal)
+	'V.Local.fAmount.Set(V.ODBC.conX!rstAccts.FieldValFloat!AMOUNT)
+	V.Local.fAmount.Set(V.DataTable.dtAcct(V.Local.iRow).AMOUNT!FieldValFloat)
+	F.Intrinsic.String.IsInString(V.Local.sAmount,".",True,V.Local.bDec)
+	F.Intrinsic.Control.If(V.Local.bDec,=,True)
+		F.Intrinsic.String.Split(V.Local.sAmount,".",V.Local.sAmount)
+		F.Intrinsic.String.LPad(V.Local.sAmount(0),"0",8,V.Local.sAmount(0))
+		F.Intrinsic.String.RPad(V.Local.sAmount(1),"0",2,V.Local.sAmount(1))
+		F.Intrinsic.String.Concat(V.Local.sAmount(0),V.Local.sAmount(1),V.Local.sAmount)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.String.Concat(V.Local.sAmount,"00",V.Local.sAmount)
+		F.Intrinsic.String.LPad(V.Local.sAmount,"0",10,V.Local.sAmount)
+	F.Intrinsic.Control.EndIf
+	'V.Local.sVendorNo.Set(V.ODBC.conX!rstAccts.FieldValTrim!VEND_NO)
+	V.Local.sVendorNo.Set(V.DataTable.dtAcct(V.Local.iRow).VEND_NO!FieldValTrim)
+	
+'	F.Intrinsic.String.Concat("Searching for a name match for vendor number: ",V.Local.sVendorNo,V.Local.sMsg)
+'	F.Intrinsic.UI.Msgbox(V.Local.sMsg)
+
+	F.ODBC.Connection!conX.TableExists("VENDOR_PAY_TO",V.Local.bExists)
+	F.Intrinsic.Control.If(V.Local.bExists,=,True)
+		F.Intrinsic.String.Concat("SELECT NAME_VENDOR_PAY FROM VENDOR_PAY_TO WHERE VENDOR = '",V.Local.sVendorNo,"'",V.Local.sQuery)
+		F.ODBC.Connection!conX.OpenRecordsetRO("rstVendor",V.Local.sQuery)
+		F.Intrinsic.Control.If(V.ODBC.conX!rstVendor.EOF,<>,True)
+			V.Local.sPayee.Set(V.ODBC.conX!rstVendor.FieldValTrim!NAME_VENDOR_PAY)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.UI.Msgbox("No vendor pay to was found with the given vendor number.")
+			F.Intrinsic.Control.CallSub(F_positive_pay_wllsfrgo_unload)
+		F.Intrinsic.Control.EndIf
+		F.ODBC.conX!rstVendor.Close
+
+		'BM Always use Payee name, since VENDOR_PAY_TO allows for 30 characters to be brought in, rather than 20 from V_CHECK_LOG
+'		'Check to see if the payee name matches the vendor name at all, if not use the payee name
+'		F.Intrinsic.String.IsInString(V.ODBC.conX!rstAccts.FieldValTrim!PAYEE,V.Local.sPayee,True,V.Local.bMatch)
+'		F.Intrinsic.Control.If(V.Local.bMatch,<>,True)
+'			V.Local.sPayee.Set(V.ODBC.conX!rstAccts.FieldValTrim!PAYEE)
+'		F.Intrinsic.Control.EndIf
+		'BM Extend Payee name (which could be payee or vendor) to 160 characters 
+		F.Intrinsic.String.RPad(V.Local.sPayee, " ", 160, V.Local.sPayee)
+		
+'		F.Intrinsic.String.Concat("Found match for vendor number: ",V.Local.sVendorNo," vendor name: ",V.Local.sPayee,V.Local.sMsg)
+'		F.Intrinsic.UI.Msgbox(V.Local.sMsg)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.UI.Msgbox("Table VENDOR_PAY_TO was not found. Exiting program.")
+		F.Intrinsic.Control.CallSub(F_positive_pay_wllsfrgo_unload)
+	F.Intrinsic.Control.EndIf
+
+	F.Intrinsic.String.Concat(V.Local.sChkSerial,V.Local.sIssueDate,V.Local.sAcctNum,V.Local.sTransCode,V.Local.sAmount,V.Local.sPayee,V.Local.sFileLine)
+	F.Intrinsic.Math.Add(V.Local.iRecCount,1,V.Local.iRecCount)
+	F.Intrinsic.Math.Add(V.Local.fAmountTotal,V.Local.fAmount,V.Local.fAmountTotal)
+	'BM For loop in gab doesn't have something like continue built in, and gets out of range if you try to skip execution. Instead use boolean to not write to file
+	F.Intrinsic.Control.If(V.Local.bSkip.Not)
+		F.Intrinsic.File.WriteLine(V.Args.iHdl,V.Local.sFileLine)
+	F.Intrinsic.Control.EndIf
+	'F.ODBC.conX!rstAccts.MoveNext
+'F.Intrinsic.Control.Loop
+F.Intrinsic.Control.Next(V.Local.iRow)
+'F.ODBC.conX!rstAccts.Close
+F.Data.DataTable.Close("dtAcct")
+
+F.Intrinsic.Variable.AddRV("iRecCount",V.Local.iRecCount)
+F.Intrinsic.Variable.AddRV("fAmountTotal",V.Local.fAmountTotal)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("detail_record_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Gui.F_Positive_Pay_WllsFrgo..Enabled(true)
+	Function.Intrinsic.String.Concat("Project: ATG_3772_Pos_PayWllsfrgo.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_positive_pay_wllsfrgo_unload)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.detail_record.End
+
+Program.Sub.trailer_record.Start
+'Write the trailer record to the file (this includes the number of detail records and their sum)
+F.Intrinsic.Control.SetErrorHandler("trailer_record_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sFileLine.Declare(String)
+V.Local.sTotal.Declare(String)
+V.Local.sRecCount.Declare(String)
+
+V.Local.sRecCount.Set(V.Args.iRecCount)
+F.Intrinsic.String.LPad(V.Local.sRecCount,"0",5,V.Local.sRecCount)
+V.Local.sTotal.Set(V.Args.fAmountTotal)
+F.Intrinsic.String.StripCharacters(V.Local.sTotal,V.Local.sTotal)
+F.Intrinsic.String.LPad(V.Local.sTotal,"0",10,V.Local.sTotal)
+
+F.Intrinsic.String.Concat("&              ",V.Local.sRecCount,"   ",V.Local.sTotal,V.Local.sFileLine)
+
+F.Intrinsic.File.WriteLine(V.Args.iHdl,V.Local.sFileLine)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("trailer_record_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Gui.F_Positive_Pay_WllsFrgo..Enabled(true)
+	Function.Intrinsic.String.Concat("Project: ATG_3772_Pos_PayWllsfrgo.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_positive_pay_wllsfrgo_unload)
+Function.Intrinsic.Control.EndIf
+
+Program.Sub.trailer_record.End
+
+Program.Sub.Comments.Start
+${$5$}$3.0.0.0$}$1
+${$6$}$bmedina$}$20220406164151627$}$kOipCrsyLBVj2KoSwkcdK23ChxGVcBlEwmHmP2NDT4iAJIGFPQIxZ/tUUNkiRJK3eu+6Ss32qfk=
+Program.Sub.Comments.End
